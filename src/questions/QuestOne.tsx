@@ -15,10 +15,10 @@ const QuestOne: FC = () => {
   };
 
   const handleUndo = () => {
-    const removePoints = [...points];
-    const removed = removePoints.pop();
+    const removePts = [...points];
+    const removed = removePts.pop();
     if (!removed) return;
-    setPoints(removePoints);
+    setPoints(removePts);
     setRemove([...remove, removed]);
   };
 
@@ -26,8 +26,8 @@ const QuestOne: FC = () => {
     const removePts = [...remove];
     const removed = removePts.pop();
     if (!removed) return;
-    setPoints([...points, removed]);
     setRemove(removePts);
+    setPoints([...points, removed]);
   };
 
   return (
