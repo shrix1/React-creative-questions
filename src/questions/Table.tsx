@@ -73,7 +73,7 @@ const Table = () => {
           ))}
         </thead>
         <tbody className="border-2 border-black" {...getTableBodyProps()}>
-          {rows.map((row, i) => {
+          {rows.map((row) => {
             prepareRow(row);
             return (
               <tr className="border-2 border-black" {...row.getRowProps()}>
