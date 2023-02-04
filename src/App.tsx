@@ -1,11 +1,12 @@
 import React, { FC } from "react";
 import "./App.css";
-import QuestOne from "./questions/QuestOne";
+import UndoRedo from "./questions/UndoRedo";
+import Table from "./questions/Table";
 
 const App: FC = () => {
   return (
     <>
-      <QuestOne />
+      {/* <UndoRedo /> */} <Table />
     </>
   );
 };

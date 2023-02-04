@@ -5,7 +5,7 @@ interface Points {
   y: number;
 }
 
-const QuestOne: FC = () => {
+const UndoRedo: FC = () => {
   const [points, setPoints] = useState<Points[]>([]);
   const [remove, setRemove] = useState<Points[]>([]);
 
@@ -67,4 +67,4 @@ const QuestOne: FC = () => {
   );
 };
 
-export default QuestOne;
+export default UndoRedo;
