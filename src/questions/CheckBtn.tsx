@@ -45,19 +45,23 @@ const CheckBtn: React.FC = () => {
     setArr(newArr);
   };
 
-  console.log(arr);
-
   return (
-    <div className="bg-gray-500 w-screen h-screen flex justify-center items-center text-2xl">
-      <ul>
+    <div className="bg-gray-500 w-screen h-screen flex justify-center items-center text-2xl flex-col">
+      <h1 className="text-3xl font-bold text-center">
+        Check the box to enable delete Btn <br />
+        to delete the item
+      </h1>
+
+      <ul className="mt-5">
         {arr.map((value, index) => (
           <li
-            className="flex justify-center items-center w-[250px] h-[100px] gap-[20px]"
+            className="flex justify-center items-center w-[250px] h-[70px] gap-[20px] border-2 rounded-md mb-2
+            border-black"
             key={index}
           >
             <input
               type="checkbox"
-              className="w-8 h-8 rounded-full outline-none"
+              className="w-8 h-8"
               onChange={() => handleCheck(index)}
             />
 
@@ -65,7 +69,7 @@ const CheckBtn: React.FC = () => {
 
             {value.checking && (
               <button
-                className="p-2 border border-white bg-sky-600 rounded-md text-xl"
+                className="px-2 py-1 border-2 border-black bg-sky-600 rounded-md text-xl font-bold"
                 onClick={() => handleDelete(value.id, index)}
               >
                 delete
