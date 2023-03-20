@@ -4,6 +4,7 @@ import UndoRedo from "./questions/UndoRedo";
 import Table from "./questions/Table";
 import CheckBtn from "./questions/CheckBtn";
 import SliderCircle from "./questions/SliderCircle";
+import ReduxLearning from "./questions/ReduxLearning";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const App: FC = () => {
@@ -11,11 +12,11 @@ const App: FC = () => {
     <>
       <Router>
         <Routes>
-          {/* current work Route is / (default)  */}
+          <Route path="/" element={<ReduxLearning />} />
           <Route path="one" element={<UndoRedo />} />
           <Route path="two" element={<Table />} />
           <Route path="three" element={<CheckBtn />} />
-          <Route path="/" element={<SliderCircle />} />
+          <Route path="four" element={<SliderCircle />} />
         </Routes>
       </Router>
     </>
