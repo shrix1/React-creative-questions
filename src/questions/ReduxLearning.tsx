@@ -24,7 +24,7 @@ const ReduxLearning: React.FC = () => {
           type="number"
           onChange={(e) => setNum(+e.target.value)}
           value={num}
-          placeholder="number to Add"
+          placeholder="number to add"
           className="p-2 outline-none rounded-md bg-gray-400 font-bold caret-white placeholder:text-black"
         />
 

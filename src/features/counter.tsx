@@ -1,7 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 export const counterSlice = createSlice({
-  name: "count", //this value need to be in store reducer
+  //this value need to be in store reducer
+  name: "count",
   initialState: { value: { num: 0, name: "" } },
   reducers: {
     increase: (state, action) => {
