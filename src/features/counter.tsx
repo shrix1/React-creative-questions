@@ -2,15 +2,18 @@ import { createSlice } from "@reduxjs/toolkit";
 
 export const counterSlice = createSlice({
   name: "count", //this value need to be in store reducer
-  initialState: { value: 0 },
+  initialState: { value: { num: 0, name: "" } },
   reducers: {
     increase: (state, action) => {
-      state.value += 1;
+      state.value.num += action.payload;
+    },
+    changeInfo: (state, action) => {
+      state.value.name = action.payload;
     },
   },
 });
 
 // to initate actions
-export const { increase } = counterSlice.actions;
+export const { increase, changeInfo } = counterSlice.actions;
 // store reducer
 export default counterSlice.reducer;
