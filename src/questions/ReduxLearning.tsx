@@ -4,7 +4,7 @@ import { useAppSelector, useAppDispatch } from "../store";
 
 const ReduxLearning: React.FC = () => {
   const [value, setValue] = useState<string>();
-  const [num, setNum] = useState<number>();
+  const [num, setNum] = useState<number>(0);
 
   const counter = useAppSelector((state) => state.count.value);
   const dispatch = useAppDispatch();
