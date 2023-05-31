@@ -6,7 +6,7 @@ type arrProps = {
   checking: boolean;
 };
 
-const arrays = [
+const arrays:arrProps[] = [
   {
     id: 0,
     name: "one",
